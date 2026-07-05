@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig?（節錄）— 雙語批注</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif+TC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0A192F;
+    --paper:#F8F9FA;
+    --trans-bg:#f0ece2;
+    --dim-yellow:#f5d565;
+    --dim-red:#f0a3a3;
+    --dim-blue:#a9c9e8;
+    --dim-green:#a9d8b8;
+    --dim-purple:#c9b3e0;
+    --ink:#1c2733;
+    --card-border:#d7dde3;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans','Noto Serif TC',sans-serif;
+  }
+  .src-text{
+    font-family:'Lora',serif;
+    font-style:normal;
+  }
+  .tgt-text{
+    font-family:'Noto Serif TC','Lora',serif;
+  }
+  header.topnav{
+    background:var(--navy);
+    color:#fff;
+    padding:20px 28px;
+  }
+  header.topnav h1{
+    margin:0 0 4px 0;
+    font-family:'Lora',serif;
+    font-size:1.35rem;
+    font-weight:600;
+  }
+  header.topnav .context{
+    font-size:0.82rem;
+    color:#c7d2e0;
+    margin-bottom:14px;
+  }
+  .legend{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    font-size:0.78rem;
+  }
+  .legend span{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background:rgba(255,255,255,0.06);
+    padding:4px 10px;
+    border-radius:999px;
+  }
+  .legend i{
+    width:11px;height:11px;border-radius:3px;display:inline-block;
+  }
+  .sectionnav{
+    position:sticky;
+    top:0;
+    z-index:10;
+    background:#0f2138;
+    color:#dbe4f0;
+    display:flex;
+    gap:18px;
+    padding:9px 28px;
+    font-size:0.82rem;
+    border-bottom:1px solid #1c3350;
+  }
+  .sectionnav a{
+    color:#dbe4f0;
+    text-decoration:none;
+  }
+  .sectionnav a:hover{ text-decoration:underline; }
+
+  main{
+    max-width:1180px;
+    margin:0 auto;
+    padding:28px;
+  }
+  .para-block{
+    display:grid;
+    grid-template-columns:1.35fr 1fr;
+    gap:22px;
+    margin-bottom:34px;
+    scroll-margin-top:52px;
+  }
+  .left-col .original{
+    font-size:1.05rem;
+    line-height:1.9;
+    padding-bottom:14px;
+    border-bottom:1px solid var(--card-border);
+  }
+  .left-col .translation{
+    margin-top:14px;
+    background:var(--trans-bg);
+    border-left:3px solid #b8ab8c;
+    padding:14px 16px;
+    font-size:0.98rem;
+    line-height:1.85;
+  }
+  .translation .label{
+    display:block;
+    font-family:'IBM Plex Sans',sans-serif;
+    font-size:0.72rem;
+    letter-spacing:0.04em;
+    color:#7a6f56;
+    margin-bottom:6px;
+    text-transform:uppercase;
+  }
+  mark{ padding:1px 3px; border-radius:3px; }
+  .dim-yellow{ background:var(--dim-yellow); }
+  .dim-red{ background:var(--dim-red); }
+  .dim-blue{ background:var(--dim-blue); }
+  .dim-green{ background:var(--dim-green); }
+  .dim-purple{ background:var(--dim-purple); }
+
+  .annot-card{
+    background:#fff;
+    border:1px solid var(--card-border);
+    border-left:4px solid var(--navy);
+    border-radius:6px;
+    padding:14px 16px;
+    font-size:0.9rem;
+    line-height:1.7;
+  }
+  .annot-card h3{
+    margin:0 0 8px 0;
+    font-size:0.95rem;
+    color:var(--navy);
+  }
+  .annot-card .qref{
+    display:inline-block;
+    font-size:0.72rem;
+    background:#eef2f7;
+    color:var(--navy);
+    padding:1px 8px;
+    border-radius:999px;
+    margin-left:6px;
+    vertical-align:middle;
+  }
+  .annot-row{ margin-bottom:8px; }
+  .annot-row .k{
+    font-weight:600;
+    color:#4a5b6e;
+    font-size:0.78rem;
+    display:block;
+    margin-bottom:2px;
+  }
+  .risk{ color:#8a3b3b; }
+
+  .provenance{
+    background:#fff;
+    border:1px dashed var(--card-border);
+    border-radius:6px;
+    padding:14px 18px;
+    font-size:0.82rem;
+    color:#4a5568;
+    margin-bottom:30px;
+  }
+  .provenance a{ color:var(--navy); }
+
+  .overview{
+    background:var(--navy);
+    color:#eef2f7;
+    border-radius:8px;
+    padding:24px 28px;
+    margin-top:10px;
+  }
+  .overview h2{
+    margin-top:0;
+    font-family:'Lora',serif;
+    font-size:1.1rem;
+  }
+  .overview dl{
+    display:grid;
+    grid-template-columns:140px 1fr;
+    gap:10px 16px;
+    font-size:0.88rem;
+    line-height:1.7;
+  }
+  .overview dt{ color:#9db1c9; font-weight:600; }
+  .overview dd{ margin:0; }
+
+  @media (max-width:760px){
+    .para-block{ grid-template-columns:1fr; }
+    .sectionnav{ overflow-x:auto; white-space:nowrap; }
+    .overview dl{ grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topnav">
+  <h1>Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig?</h1>
+  <div class="context">
+    Albert Einstein · <em>Annalen der Physik</em>, 18 卷, 頁 639–641（1905）· 節錄兩段（開篇句 + 結論句）· DOC_TYPE=academic · DE → 繁體中文（意譯）
+  </div>
+  <div class="legend">
+    <span><i style="background:var(--dim-yellow)"></i>核心論點</span>
+    <span><i style="background:var(--dim-red)"></i>關鍵術語</span>
+    <span><i style="background:var(--dim-blue)"></i>實證數據</span>
+    <span><i style="background:var(--dim-green)"></i>讓步/反駁</span>
+    <span><i style="background:var(--dim-purple)"></i>方法論</span>
+  </div>
+</header>
+
+<nav class="sectionnav">
+  <a href="#p1">§1 開篇句</a>
+  <a href="#p2">§2 結論句</a>
+  <a href="#overview">總覽</a>
+</nav>
+
+<main>
+
+  <div class="provenance">
+    <strong>來源與授權說明：</strong>
+    愛因斯坦 1955 年逝世，依 EU 著作權年限（死後 70 年，計至該年年底），原始德文文本已於 2025/12/31 到期，現屬公有領域，可自由重製。
+    本頁僅節錄全文 3 頁中最具代表性的「開篇句」與「結論句」（即 E=mc² 最初文字形式），非全文轉載。
+    完整原文掃描可見
+    <a href="https://myweb.rz.uni-augsburg.de/~eckern/adp/history/Einstein-in-AdP.htm" target="_blank" rel="noopener">Annalen der Physik Historic Papers（Uni Augsburg）</a>
+    第 9 號條目，或 <a href="https://de.wikisource.org/wiki/Albert_Einstein" target="_blank" rel="noopener">de.Wikisource / Internet Archive</a> 掃描檔。
+    中文譯文為本示範原創翻譯，非引用他人譯本。
+  </div>
+
+  <section class="para-block" id="p1">
+    <div class="left-col">
+      <p class="original src-text">
+        Die Resultate der vorstehenden <mark class="dim-red">Untersuchung</mark> führen zu einer sehr interessanten
+        <mark class="dim-red">Folgerung</mark>, die hier <mark class="dim-purple">abgeleitet werden soll</mark>.
+      </p>
+      <div class="translation tgt-text">
+        <span class="label">繁體中文 · 意譯</span>
+        前述研究的成果，將導向一個極具意義的推論，以下將對此推論進行推導。
+      </div>
+    </div>
+    <div class="annot-card">
+      <h3>批注 <span class="qref">對應 Q1</span></h3>
+      <div class="annot-row"><span class="k">段落功能</span>引出問題</div>
+      <div class="annot-row"><span class="k">邏輯角色</span>承接同年稍早發表之電動力學論文〈論動體的電動力學〉的結論，作為本文的起始鉤點，預告將推導出一項新結果。</div>
+      <div class="annot-row risk"><span class="k">風險點</span>「前述研究」所指內容並未在本句中說明。脫離原論文發表脈絡（1905 年同刊物的相對論論文）單獨閱讀本句，讀者無法得知此處「結果」具體所指——本句高度依賴讀者已掌握同一系列前作。</div>
+    </div>
+  </section>
+
+  <section class="para-block" id="p2">
+    <div class="left-col">
+      <p class="original src-text">
+        <mark class="dim-yellow">Die Masse eines Körpers ist ein Maß für dessen Energieinhalt</mark>;
+        ändert sich die Energie um L, so ändert sich die Masse in demselben Sinne um
+        <mark class="dim-blue">L/9·10<sup>20</sup></mark>, wenn die Energie in Erg und die Masse in Gramm gemessen wird.
+      </p>
+      <div class="translation tgt-text">
+        <span class="label">繁體中文 · 意譯</span>
+        一個物體的質量，即是其能量含量的量度；若能量改變了 L，則質量將以相同方向改變 L/9×10²⁰
+        （此處能量以爾格為單位、質量以公克為單位計算）。
+      </div>
+    </div>
+    <div class="annot-card">
+      <h3>批注 <span class="qref">對應 Q2</span></h3>
+      <div class="annot-row"><span class="k">段落功能</span>總結</div>
+      <div class="annot-row"><span class="k">邏輯角色</span>全文核心結論，將前段電動力學推導的特例結果，收斂為質量與能量之間的一般性等價關係——此句即後世 E=mc² 公式最初的文字表述（9×10²⁰ erg/g 即光速平方 c² 在該單位制下的數值）。</div>
+      <div class="annot-row risk"><span class="k">風險點</span>1905 年當時，此等價關係僅由「物體釋放電磁輻射」的特例推導而得；愛因斯坦在本句將其推廣為「任意物體」的普遍陳述，但嚴格的普遍性證明要到後續論文（如 1906 年〈重心運動守恆原理與能量的慣性〉）才逐步補強——這個推廣的邏輯跳躍，是後世物理學史檢視本文時最常被指出的薄弱環節。</div>
+    </div>
+  </section>
+
+  <section class="overview" id="overview">
+    <h2>全文總覽</h2>
+    <dl>
+      <dt>邏輯骨架</dt>
+      <dd>前作結論（電動力學特例）→ 本文提問：慣性是否取決於能量含量？→〔節錄未收錄之推導過程〕→ 一般化結論：質量是能量的量度</dd>
+      <dt>核心主張</dt>
+      <dd>物體的質量是其能量含量的量度，兩者可透過關係式 E = mc² 互換。</dd>
+      <dt>最強處</dt>
+      <dd>僅以 3 頁篇幅，即從一個電動力學特例躍升為適用於一切物體的普適物理原理，展現極高的理論精簡度。</dd>
+      <dt>最弱處／風險</dt>
+      <dd>從「電磁輻射」特例推廣至「任意物體」缺乏嚴格證明，此推廣的正當性留待作者本人後續論文補強，屬於本文論證鏈中最脆弱的一環。</dd>
+    </dl>
+  </section>
+
+</main>
+</body>
+</html>

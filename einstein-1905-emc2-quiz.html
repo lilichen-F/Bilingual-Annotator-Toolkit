@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>E=mc² 節錄理解題 — 問題清單</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif+TC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0A192F;
+    --paper:#F8F9FA;
+    --card-border:#d7dde3;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:#1c2733;
+    font-family:'IBM Plex Sans','Noto Serif TC',sans-serif;
+  }
+  header{
+    background:var(--navy);
+    color:#fff;
+    padding:20px 28px;
+  }
+  header h1{
+    margin:0 0 4px 0;
+    font-family:'Lora',serif;
+    font-size:1.25rem;
+  }
+  header .sub{
+    font-size:0.8rem;
+    color:#c7d2e0;
+  }
+  main{
+    max-width:760px;
+    margin:0 auto;
+    padding:28px;
+    display:grid;
+    gap:16px;
+  }
+  .qcard{
+    background:#fff;
+    border:1px solid var(--card-border);
+    border-left:4px solid var(--navy);
+    border-radius:6px;
+    padding:16px 18px;
+  }
+  .qcard .qnum{
+    display:inline-block;
+    font-size:0.72rem;
+    background:#eef2f7;
+    color:var(--navy);
+    padding:1px 9px;
+    border-radius:999px;
+    margin-bottom:8px;
+  }
+  .qcard p.question{
+    font-family:'Noto Serif TC','Lora',serif;
+    font-size:1.02rem;
+    margin:0 0 10px 0;
+    line-height:1.7;
+  }
+  details summary{
+    cursor:pointer;
+    color:var(--navy);
+    font-size:0.85rem;
+    font-weight:600;
+    outline:none;
+  }
+  details[open] summary{ margin-bottom:8px; }
+  .answer{
+    font-size:0.92rem;
+    line-height:1.75;
+    background:#f5f7f9;
+    border-radius:5px;
+    padding:10px 14px;
+  }
+  footer{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 28px 40px 28px;
+    font-size:0.78rem;
+    color:#6b7686;
+  }
+  @media (max-width:600px){
+    main{ padding:18px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>E = mc² 節錄理解題</h1>
+  <div class="sub">TYPE_A 問題清單＋折疊答案 · 對應文件：Einstein, 1905, AdP 18, 639–641（節錄兩段）</div>
+</header>
+
+<main>
+
+  <div class="qcard">
+    <span class="qnum">Q1 · 對應批注 Q1</span>
+    <p class="question">開篇句「Die Resultate der vorstehenden Untersuchung führen zu einer sehr interessanten Folgerung」中，「前述研究」實際上是指哪一篇論文？為何作者沒有在本句中明說？</p>
+    <details>
+      <summary>顯示答案</summary>
+      <div class="answer">
+        指的是愛因斯坦同年（1905）稍早發表於同一期刊的〈論動體的電動力學〉（狹義相對論奠基論文）。
+        本文是該論文的延伸短篇，因此作者以「前述研究」直接承接，未重述細節——
+        這也是本句若脫離原發表脈絡單獨閱讀時，最容易造成理解斷點之處。
+      </div>
+    </details>
+  </div>
+
+  <div class="qcard">
+    <span class="qnum">Q2 · 對應批注 Q2</span>
+    <p class="question">結論句中的「L/9×10²⁰」實際上對應現代 E=mc² 公式中的哪一項？為什麼是這個數值？</p>
+    <details>
+      <summary>顯示答案</summary>
+      <div class="answer">
+        對應 1/c²。9×10²⁰ 是光速 c（約 3×10¹⁰ cm/s，1905 年 CGS 制單位）平方後的數值，
+        即 c² ≈ 9×10²⁰ cm²/s²。愛因斯坦當時尚未使用「E=mc²」這個現代記號，
+        而是以「質量變化 = 能量變化 ÷ 9×10²⁰」的形式表達同一個關係。
+      </div>
+    </details>
+  </div>
+
+  <div class="qcard">
+    <span class="qnum">Q3 · 綜合理解</span>
+    <p class="question">這篇論文從「電磁輻射的特例」推廣到「任意物體的普遍陳述」，這個推廣步驟為何被視為全文邏輯上最薄弱的一環？</p>
+    <details>
+      <summary>顯示答案</summary>
+      <div class="answer">
+        因為原始推導只證明了「物體以輻射形式釋放能量」時的質量變化，
+        並未證明這個關係對「任何形式的能量變化」都成立。
+        愛因斯坦在結論句中直接寫成「一個物體的質量」（未限定能量釋放形式），
+        屬於尚未完全證明的推廣——此一般化的嚴格證明是他及其他物理學家在後續數年間才逐步補上的。
+      </div>
+    </details>
+  </div>
+
+</main>
+
+<footer>
+  來源：Albert Einstein, <em>Annalen der Physik</em> 18 (1905), 639–641。原文（德文）因作者歿於 1955 年、
+  依 EU death+70 規則已於 2025 年底進入公有領域。本頁問答內容為原創編寫，非翻譯自任何第三方教材。
+</footer>
+
+</body>
+</html>
